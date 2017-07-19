@@ -29,57 +29,44 @@ $(document).ready(function(){
       var playTimeout, mousedownTimeout,nextSoundTimeout,errorTimeout,startgameTimeout,ID;
       
       // Variables for sound
-      var errorFreq = "329.63";
-      var errorShape = 'triangle';
+      // var errorFreq = "329.63";
+      // var errorShape = 'triangle';
       var soundShape = 'sine';
       var freqArr = ["329.63","261.63","220","164.81"]
       var freq;
       var shape;
 
-      function Sound(context) {
+      var sound = {
 
-         var osc = null;
-         var gain = null;
+         ctx: audioContext,
 
-         this.init = function(freq,shape) {
-            // Create the source of sound
-            osc = context.createOscillator();
+         play: function(freq,shape) {
+            this.osc = this.ctx.createOscillator();
             // For volume control
-            gain = context.createGain();
+            this.gain = this.ctx.createGain();
             //Connecting nodes together in this order: source (oscillator)-gain node-destination
-            osc.connect(gain);
-            gain.connect(context.destination);
+            this.osc.connect(this.gain);
+            this.gain.connect(this.ctx.destination);
 
             // Oscillator settings
-            osc.type = shape;
-            osc.frequency.value = freq;
+            this.osc.type = shape || 'triangle';
+            this.osc.frequency.value = freq || '329.63';
 
             // Volume setting
-            gain.gain.value = 0.1; // default volume
-            gain.gain.linearRampToValueAtTime(1, context.currentTime + 0.00999); // Ease the sound in when the sound starts
-         }
+            this.gain.gain.value = 0.1; // default volume
+            this.gain.gain.linearRampToValueAtTime(1, this.ctx.currentTime + 0.00999);
 
-         this.aiPlay = function(freq,shape,time) {
-            this.init(freq,shape);
 
-            osc.start(context.currentTime);
-            gain.gain.setValueAtTime(1,context.currentTime + time);
-            gain.gain.linearRampToValueAtTime(0.001, context.currentTime + time + 0.00999); // Ease the sound out when the sound stops
-            osc.stop(context.currentTime + time + 0.1);
-         }
+            this.osc.start(this.ctx.currentTime);
+         },
 
-         this.play = function(freq,shape) {
-            this.init(freq,shape);
-
-            osc.start(context.currentTime);
-         }
-         this.stop = function() {
-            gain.gain.linearRampToValueAtTime(0.001, context.currentTime + 0.015); // Ease the sound out when the sound stops
+         stop: function() {
+            this.gain.gain.linearRampToValueAtTime(0.001, this.ctx.currentTime + 0.015); // Ease the sound out when the sound stops
             // gain.gain.setTargetAtTime(0, context.currentTime, 0.015);
-            osc.stop(context.currentTime + 0.02);
-         }   
+            this.osc.stop(this.ctx.currentTime + 0.02);
+         }
+
       }
-      var sound = new Sound(audioContext);
       
       //***************************************************************************************************************************************
       // FUNCTIONS
@@ -89,73 +76,6 @@ $(document).ready(function(){
          return Math.round(Math.random() * (max - min) + min);
       }
 
-      function clearAllTimeout() {
-         clearTimeout(playTimeout);
-         clearTimeout(mousedownTimeout);
-         clearTimeout(nextSoundTimeout);
-         clearTimeout(errorTimeout);
-         clearTimeout(startgameTimeout);
-         clearTimeout(ID);
-      }
-      
-      
-      
-
-      function playError() {
-         errorTimeout = setTimeout(function(){
-            wrong = 1;
-            console.log(wrong);
-            sound.aiPlay(errorFreq,errorShape,1);
-            startgameTimeout = setTimeout(function(){
-               playIt(0);
-            },2000);
-         },5000);
-      }
-
-      function playRandom() {
-         var val = randomRange(3,0);
-         playList.push(val);
-         console.log(playList);
-         playListCopy = playList.slice();
-         console.log(playListCopy);
-         $(theBtn[val]).addClass('active');
-         sound.aiPlay(freqArr[val],soundShape,1)
-         mousedownTimeout = setTimeout(function(){
-            $(theBtn[val]).removeClass('active');
-            mouseClickable = 1;
-         },1000);
-         playError();
-      }
-
-      function playIt(index) {         
-            mouseClickable = 0;
-            if (index >= playList.length) {
-               clearTimeout(nextSoundTimeout);
-               clearTimeout(mousedownTimeout);
-               if (wrong === 0) {
-                  playRandom();
-               }
-               else {
-                  playListCopy = playList.slice();
-                  console.log(playListCopy);
-                  mouseClickable = 1;
-                  playError();
-               }
-               
-            }
-            else {
-               sound.aiPlay(freqArr[playList[index]],soundShape,1)
-               $(theBtn[playList[index]]).addClass('active');
-               mousedownTimeout = setTimeout(function(){
-                  // console.log('mousedownTimeout');
-                  $(theBtn[playList[index]]).removeClass('active');
-                     nextSoundTimeout = setTimeout(function(){
-                        // console.log('nextSoundTimeout');
-                        playIt(index+1);
-                     }, 2000);   
-               },1000);
-            }
-      };
    
       
       //***************************************************************************************************************************************
@@ -164,63 +84,19 @@ $(document).ready(function(){
       theBtn
          .on('mousedown touchstart', function(e){
             e.preventDefault();
-            if (mouseClickable == 0) {
-               return;
-            }
-            else {
-               let thisBtn = $(this).val();
-               console.log('mousedown');
-               if ($(this).val() == playListCopy[0]) {
-                  playListCopy.shift();
-                  console.log('correct',playListCopy);
-                  freq = freqArr[$(this).val()];
-                  sound.play(freq,soundShape);
-                  wrong = 0;
-                  clearAllTimeout();
-                  
-               }
-               else if ($(this).val() != playListCopy[0]) {
-                  console.log('wrong');
-                  sound.aiPlay(errorFreq,errorShape,1);
-                  wrong = 1;
-                  clearAllTimeout();
-                  
-               }
-               // console.log(this);
-               // ID = setTimeout(function(){
-               //    $(theBtn[thisBtn]).trigger('mouseup');
-               // },1000)
-               
-               $(this).addClass('active');
-               mouseTarget = this;   
-            }
+            
+            
+            console.log(sound);
+            sound.play(freqArr[0],'sine');
+
+            $(this).addClass('active');
+            mouseTarget = this;   
          })
          .on('mouseup touchend',function(){
-            if (mouseClickable == 0) {
-               return;
-            }
-            else {
-               if (wrong == 0) {
-                  console.log('mouseup');
-                  sound.stop();
-                  if (playListCopy.length == 0) {
-                     startgameTimeout = setTimeout(function(){
-                        playIt(0);
-                     },2000);
-                  }
-                  else {
-                     playError(); //Start the time limit
-                  }
-               }
-               else {
-                  mouseClickable = 0;
-                  startgameTimeout = setTimeout(function(){
-                     playIt(0);
-                  },2000);
-               }
-               clearTimeout(ID);
-               $(this).removeClass('active');
-            }
+            console.log(sound);
+            sound.stop();
+
+            $(this).removeClass('active');
          });
       
 

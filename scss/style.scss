@@ -1,0 +1,210 @@
+
+$curveBorder: 0.5em;
+$innerBorderWidth: $curveBorder/2;
+@mixin innerBorder($side1,$side2) {
+   border-#{$side1}-width: $innerBorderWidth;
+   border-#{$side2}-width: $innerBorderWidth;
+}
+
+
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   background-color: #dadada;
+}
+
+button:focus {
+   outline: none;
+}
+
+* {
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.container {
+   text-align: center;
+   // background-color: grey; //Testing
+   
+   h1 {
+      margin: 2em;
+   }
+}
+
+.circle {
+   height: 20em;
+   width: 20em;
+   margin: 0 auto;
+   position: relative;
+   
+   
+   > button {
+      font-size: 1em;
+      border: $curveBorder solid #313131;
+      width: 10em;
+      height: 10em;
+      float: left;
+      cursor: pointer;
+      
+      
+      &:focus {
+         outline: none;
+      }
+   }
+   
+   .top-left {
+      background-color: #a93939;
+      border-top-left-radius: 10em;
+      @include innerBorder(bottom,right);
+   }
+   .top-left.active {
+      background-color: #ff6666;
+   }
+   
+   .top-right {
+      background-color: #2457af;
+      border-top-right-radius: 10em;
+      @include innerBorder(bottom,left);
+   }
+   .top-right.active {
+      background-color: #3981ff;
+   }
+   
+   .bottom-left {
+      background-color: #49c549;
+      border-bottom-left-radius: 10em;
+      @include innerBorder(top,right);
+   }
+   .bottom-left.active {
+      background-color: #5aff5a;
+   }
+   
+   .bottom-right {
+      background-color: #c5c537;
+      border-bottom-right-radius: 10em;
+      @include innerBorder(top,left);
+   }
+   .bottom-right.active {
+      background-color: #ffff4d;
+   }
+   
+   div.indicator {
+      width: 8em;
+      height: 8em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+      background-color: #313131;
+      // font-size: 1em;
+      
+      .screen {
+         font-family: 'VT323', monospace;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background-color: #e4e4e4;
+         color: black;
+         font-size: 2em;
+         width: 2.5em;
+         border-radius: 0.2em;
+         box-shadow: inset 0 0.1em 0.1em #999;
+         
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+      }
+   }
+}
+
+.ctrl-panel {
+   width: 20em;
+   margin: 0 auto;
+   padding: 1em;
+   
+   button.start,
+   button.strict {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5rem;
+      padding: 0.3em 0;
+      width: 3.5em;
+      margin: 0 0.3em;
+      color: #fff;
+      border: none;
+      border-radius: 0.2em;
+      box-shadow: 0 0.2em 0.1em #404040;
+   }
+   button.start{
+      background-color: #026e9e;
+   }
+   button.strict{
+      background-color: #b93531;
+   }
+   // button.start:active,
+   button.start.on,
+   button.strict.on {
+      transform: translateY(0.1em);
+      box-shadow: 0 0.1em 0.05em #404040;
+   }
+   // button.start:active,
+   button.start.on {
+      background-color: #024969;
+   }
+   button.strict.on {
+      background-color: #7a1a17;
+   }
+   
+   div {
+      padding: 2em 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      button.onOff {
+         text-indent: -9999px;
+         width: 4em;
+         height: 2em;
+         margin: 0 0.5em;
+         border-radius: 1em;
+         border: none;
+         position: relative;
+         background-color: #404040;
+         
+         
+         &:before {
+            content:'';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 2em;
+            width: 2em;
+            background-color: red;
+            border-radius: 1em;
+            box-shadow: 0 0.2em 0.1em #404040;
+            transform: translateX(0);
+            transition: transform 300ms;
+         }
+         
+         
+      }
+      button.onOff.on {
+         
+         
+         &:before {
+            transform: translateX(100%);
+         }
+         
+      }
+   }
+   
+}
+
+.unclickable {
+   pointer-events: none;
+}
+

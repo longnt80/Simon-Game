@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simon game 002</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto|VT323'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+   <br>
+<!--    <h1>The Simon Game</h1> -->
+   <div class="circle">
+      <button class="top-left color" data-position="top-left" value="0"></button>
+      <button class="top-right color" data-position="top-right" value="1"></button>
+      <button class="bottom-left color" data-position="bottom-left" value="2"></button>
+      <button class="bottom-right color" data-position="bottom-right" value="3"></button>
+      <div class="indicator">
+         <div class="screen">01</div>
+      </div>
+   </div>
+   <div class="ctrl-panel">
+      <button class="start" id="start">Start</button>
+      <button class="strict" id="strict">Strict</button>
+      <div>
+         <span>OFF</span>
+         <button class="onOff"  id="onOff">OnOff</button>   
+         <span>ON</span>
+      </div>
+      
+   </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

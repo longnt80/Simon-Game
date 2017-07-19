@@ -1,0 +1,420 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"the",
+				"theBtn"
+			],
+			[
+				"pla",
+				"playList"
+			],
+			[
+				"play",
+				"playListCopy"
+			],
+			[
+				"er",
+				"errorTimeout"
+			],
+			[
+				"erro",
+				"errorTimeout"
+			],
+			[
+				"clr",
+				"clearTimeout"
+			],
+			[
+				"sou",
+				"soundShape"
+			],
+			[
+				"mouse",
+				"mouseup	.mouseup()"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"un",
+				"unclickable"
+			],
+			[
+				"has",
+				"hasClass	.hasClass()"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass()"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"clea",
+				"clearTimeout"
+			],
+			[
+				"cl",
+				"clearTimeout"
+			],
+			[
+				"set",
+				"setTimeout"
+			],
+			[
+				"freq",
+				"freqArr"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"font",
+				"font-weight"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "js/index.js",
+			"settings":
+			{
+				"buffer_size": 9823,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1308,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Projects/Simon-Game/index.html",
+		"/D/Projects/Simon-Game/js/index.js",
+		"/D/Projects/Simon-Game/scss/style.scss",
+		"/C/wamp64/www/heartyjuice-static/vi/careers.php",
+		"/C/wamp64/www/heartyjuice-static/vi/our-promise.php",
+		"/C/wamp64/www/heartyjuice-static/vi/header.php",
+		"/C/wamp64/www/heartyjuice-static/vi/index.php",
+		"/C/wamp64/www/heartyjuice-static/vi/our-difference.php",
+		"/C/wamp64/www/heartyjuice-static/vi/testimonials.php",
+		"/C/wamp64/www/heartyjuice-static/vi/about-the-founder.php",
+		"/C/wamp64/www/heartyjuice-static/vi/about-hearty-juice.php",
+		"/C/wamp64/www/heartyjuice-static/testimonials.php",
+		"/C/wamp64/www/heartyjuice-static/header.php",
+		"/C/wamp64/www/heartyjuice-static/careers.php",
+		"/C/wamp64/www/heartyjuice-static/our-difference.php",
+		"/C/wamp64/www/heartyjuice-static/our-promise.php",
+		"/C/wamp64/www/heartyjuice-static/index.php",
+		"/C/wamp64/www/heartyjuice-static/about-hearty-juice.php",
+		"/C/wamp64/www/heartyjuice-static/about-the-founder.php",
+		"/C/wamp64/www/heartyjuice-static/navigation.php",
+		"/C/wamp64/www/heartyjuice-static/vi/navigation.php",
+		"/C/wamp64/www/heartyjuice-static/vi/footer.php",
+		"/C/wamp64/www/heartyjuice-static/scss/components/_nav.scss",
+		"/C/Users/LongNguyen/AppData/Local/Temp/fz3temp-2/about-the-founder.php",
+		"/C/wamp64/www/heartyjuice-static/vi/common-scripts.php",
+		"/C/wamp64/www/heartyjuice-static/common-scripts.php",
+		"/D/Projects/Hearty Juice/Hearty-Juice/testimonials.html",
+		"/C/Users/LongNguyen/AppData/Local/Temp/fz3temp-2/.htaccess 2",
+		"/D/Projects/Hearty Juice/Hearty-Juice-upload/careers.html",
+		"/C/Users/LongNguyen/AppData/Local/Temp/fz3temp-2/navigation.php",
+		"/C/Users/LongNguyen/AppData/Local/Temp/fz3temp-2/testimonials.php",
+		"/C/Users/LongNguyen/AppData/Local/Temp/fz3temp-2/index.php",
+		"/C/Users/LongNguyen/AppData/Local/Temp/fz3temp-2/header 2.php",
+		"/C/Users/LongNguyen/AppData/Local/Temp/fz3temp-2/our-difference.php",
+		"/C/Users/LongNguyen/AppData/Local/Temp/fz3temp-2/header.php",
+		"/C/Users/LongNguyen/AppData/Local/Temp/fz3temp-2/main.css",
+		"/C/Users/LongNguyen/AppData/Local/Temp/fz3temp-2/.htaccess",
+		"/C/wamp64/www/heartyjuice-static/.htaccess",
+		"/C/wamp64/www/heartyjuice-static/vi/.htaccess",
+		"/C/wamp64/www/heartyjuice-static/scss/base/_misc.scss",
+		"/C/wamp64/www/heartyjuice-static/js/main.js",
+		"/C/wamp64/www/heartyjuice-static/vi/config.php",
+		"/C/wamp64/www/heartyjuice-static/config.php",
+		"/C/wamp64/bin/apache/apache2.4.23/conf/httpd.conf",
+		"/C/wamp64/www/heartyjuice-static/footer.php",
+		"/C/wamp64/www/heartyjuice/wp-content/themes/hearty-juice/testing.php",
+		"/C/Users/LongNguyen/Documents/My CamStudio Videos/heartycenter.swf.html",
+		"/C/wamp64/www/heartyjuice/wp-content/themes/hearty-juice/index.php",
+		"/C/Users/LongNguyen/AppData/Local/Temp/fz3temp-2/index.html",
+		"/D/Projects/Hearty Juice/Hearty-Juice-upload/index.html",
+		"/C/Users/LongNguyen/Desktop/bk.htaccess",
+		"/C/Users/LongNguyen/Desktop/ - Copy.htaccess",
+		"/C/Users/LongNguyen/Desktop/.htaccess",
+		"/C/wamp64/www/heartycenter/.htaccess",
+		"/C/Users/LongNguyen/Desktop/wp-config.php",
+		"/C/Users/LongNguyen/Desktop/style.css",
+		"/C/wamp64/www/taspa/wp-content/themes/beautyspot-child/library/css/skin/myskin.css",
+		"/C/Users/LongNguyen/Desktop/default.scss",
+		"/C/wamp64/www/taspa/wp-content/themes/beautyspot-child/library/css/skin/ta-green.css",
+		"/C/Users/LongNguyen/Desktop/default.css",
+		"/D/Dropbox/TA Spa/backup/files/themes/beautyspot-child/style.css",
+		"/C/wamp64/www/taspa/wp-content/themes/beautyspot-child/style.css",
+		"/C/wamp64/www/taspa/wp-content/themes/betheme-child/style.css",
+		"/D/Dropbox/TA Spa/backup/taspa.sql",
+		"/C/Users/LongNguyen/Desktop/cache minify/.htaccess",
+		"/C/Users/LongNguyen/Desktop/cache pageenhanced/.htaccess"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"trigger",
+			"img",
+			".pdf",
+			"img",
+			".pdf",
+			"img",
+			"/2017/03/images",
+			"src=\"",
+			"src=\"../",
+			"Hearty Juice",
+			".php",
+			"case '/",
+			"src=\"",
+			"img src=\"",
+			"a href=\"",
+			"href",
+			"href=\"images",
+			"src=\"images",
+			"href=\"",
+			"href=\"images",
+			"../im",
+			"../ima",
+			";\"><",
+			"src=\"images",
+			"im",
+			"cas",
+			"$lang",
+			"$language",
+			"/'",
+			"imag",
+			"/heartyjuice-static",
+			"../",
+			"/heartyjuice-static",
+			"ic/",
+			"src=\"",
+			"../",
+			"src=\"",
+			"../",
+			"href=\"",
+			"js/",
+			"../../",
+			"../",
+			"../../",
+			".php",
+			"../i",
+			"images/",
+			"#LoadModule rewrite_module modules/mod_rewrite.so",
+			"images/",
+			"html",
+			"localhost:8080",
+			"local",
+			"– ",
+			"li"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/index.js",
+					"settings":
+					{
+						"buffer_size": 9823,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4032,
+								4032
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1165.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 1308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								354,
+								354
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 480.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 163.0,
+	"status_bar_visible": true
+}

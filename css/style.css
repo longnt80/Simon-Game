@@ -1,0 +1,174 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #dadada;
+}
+
+button:focus {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+}
+.container h1 {
+  margin: 2em;
+}
+
+.circle {
+  height: 20em;
+  width: 20em;
+  margin: 0 auto;
+  position: relative;
+}
+.circle > button {
+  font-size: 1em;
+  border: 0.5em solid #313131;
+  width: 10em;
+  height: 10em;
+  float: left;
+  cursor: pointer;
+}
+.circle > button:focus {
+  outline: none;
+}
+.circle .top-left {
+  background-color: #a93939;
+  border-top-left-radius: 10em;
+  border-bottom-width: 0.25em;
+  border-right-width: 0.25em;
+}
+.circle .top-left.active {
+  background-color: #ff6666;
+}
+.circle .top-right {
+  background-color: #2457af;
+  border-top-right-radius: 10em;
+  border-bottom-width: 0.25em;
+  border-left-width: 0.25em;
+}
+.circle .top-right.active {
+  background-color: #3981ff;
+}
+.circle .bottom-left {
+  background-color: #49c549;
+  border-bottom-left-radius: 10em;
+  border-top-width: 0.25em;
+  border-right-width: 0.25em;
+}
+.circle .bottom-left.active {
+  background-color: #5aff5a;
+}
+.circle .bottom-right {
+  background-color: #c5c537;
+  border-bottom-right-radius: 10em;
+  border-top-width: 0.25em;
+  border-left-width: 0.25em;
+}
+.circle .bottom-right.active {
+  background-color: #ffff4d;
+}
+.circle div.indicator {
+  width: 8em;
+  height: 8em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #313131;
+}
+.circle div.indicator .screen {
+  font-family: 'VT323', monospace;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e4e4e4;
+  color: black;
+  font-size: 2em;
+  width: 2.5em;
+  border-radius: 0.2em;
+  box-shadow: inset 0 0.1em 0.1em #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.ctrl-panel {
+  width: 20em;
+  margin: 0 auto;
+  padding: 1em;
+}
+.ctrl-panel button.start,
+.ctrl-panel button.strict {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  padding: 0.3em 0;
+  width: 3.5em;
+  margin: 0 0.3em;
+  color: #fff;
+  border: none;
+  border-radius: 0.2em;
+  box-shadow: 0 0.2em 0.1em #404040;
+}
+.ctrl-panel button.start {
+  background-color: #026e9e;
+}
+.ctrl-panel button.strict {
+  background-color: #b93531;
+}
+.ctrl-panel button.start.on,
+.ctrl-panel button.strict.on {
+  transform: translateY(0.1em);
+  box-shadow: 0 0.1em 0.05em #404040;
+}
+.ctrl-panel button.start.on {
+  background-color: #024969;
+}
+.ctrl-panel button.strict.on {
+  background-color: #7a1a17;
+}
+.ctrl-panel div {
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ctrl-panel div button.onOff {
+  text-indent: -9999px;
+  width: 4em;
+  height: 2em;
+  margin: 0 0.5em;
+  border-radius: 1em;
+  border: none;
+  position: relative;
+  background-color: #404040;
+}
+.ctrl-panel div button.onOff:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2em;
+  width: 2em;
+  background-color: red;
+  border-radius: 1em;
+  box-shadow: 0 0.2em 0.1em #404040;
+  transform: translateX(0);
+  transition: transform 300ms;
+}
+.ctrl-panel div button.onOff.on:before {
+  transform: translateX(100%);
+}
+
+.unclickable {
+  pointer-events: none;
+}

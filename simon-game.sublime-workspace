@@ -4,16 +4,140 @@
 		"selected_items":
 		[
 			[
-				"the",
-				"theBtn"
+				"blink",
+				"blinkInfi"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"wrap",
+				"word-wrap"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"mar",
+				"marquee"
+			],
+			[
+				"ani",
+				"animation"
+			],
+			[
+				"tran",
+				"translate"
+			],
+			[
+				"tra",
+				"translate"
+			],
+			[
+				"bli",
+				"blinkInfi"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"play",
+				"playList"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"bl",
+				"blink"
+			],
+			[
+				"mou",
+				"mousedown	.mousedown()"
+			],
+			[
+				"btn",
+				"btnSound"
+			],
+			[
+				"bt",
+				"btnSound"
+			],
+			[
+				"S",
+				"btnSound"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"timo",
+				"timeoutID"
+			],
+			[
+				"playLi",
+				"playListCopy"
+			],
+			[
+				"timeout",
+				"timeoutID"
+			],
+			[
+				"time",
+				"timeoutID1"
 			],
 			[
 				"pla",
 				"playList"
 			],
 			[
-				"play",
-				"playListCopy"
+				"pl",
+				"playList"
+			],
+			[
+				"fr",
+				"freq"
+			],
+			[
+				"err",
+				"errSound"
+			],
+			[
+				"freq",
+				"freq"
+			],
+			[
+				"fre",
+				"freq"
+			],
+			[
+				"Au",
+				"AudioContext"
+			],
+			[
+				"sou",
+				"sound"
+			],
+			[
+				"tri",
+				"trigger	.trigger()"
+			],
+			[
+				"the",
+				"theBtn"
 			],
 			[
 				"er",
@@ -28,16 +152,8 @@
 				"clearTimeout"
 			],
 			[
-				"sou",
-				"soundShape"
-			],
-			[
 				"mouse",
 				"mouseup	.mouseup()"
-			],
-			[
-				"add",
-				"addClass	.addClass()"
 			],
 			[
 				"un",
@@ -68,10 +184,6 @@
 				"setTimeout"
 			],
 			[
-				"freq",
-				"freqArr"
-			],
-			[
 				"lo",
 				"log"
 			],
@@ -87,7 +199,15 @@
 			"file": "js/index.js",
 			"settings":
 			{
-				"buffer_size": 9823,
+				"buffer_size": 12485,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/style.scss",
+			"settings":
+			{
+				"buffer_size": 4974,
 				"line_ending": "Unix"
 			}
 		},
@@ -95,7 +215,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1308,
+				"buffer_size": 1327,
 				"line_ending": "Unix"
 			}
 		}
@@ -227,6 +347,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"logging()",
+			"timeoutID",
 			"trigger",
 			"img",
 			".pdf",
@@ -305,15 +427,15 @@
 					"file": "js/index.js",
 					"settings":
 					{
-						"buffer_size": 9823,
+						"buffer_size": 12485,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4032,
-								4032
+								423,
+								423
 							]
 						],
 						"settings":
@@ -323,25 +445,53 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1165.0,
+						"translation.y": 5578.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "index.html",
+					"file": "scss/style.scss",
 					"settings":
 					{
-						"buffer_size": 1308,
+						"buffer_size": 4974,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								354,
-								354
+								2463,
+								2463
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2186.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 1327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								329,
+								329
 							]
 						],
 						"settings":
@@ -351,7 +501,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 480.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -415,6 +565,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 163.0,
+	"side_bar_width": 199.0,
 	"status_bar_visible": true
 }

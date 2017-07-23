@@ -101,7 +101,7 @@ button:focus {
   .ctrl-panel button.start,
   .ctrl-panel button.strict {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding: 0.3em 0;
     width: 3.5em;
     margin: 0 0.3em;
@@ -125,8 +125,10 @@ button:focus {
     padding: 2em 0;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    font-size: 1em; }
     .ctrl-panel div button.onOff {
+      font-size: 1em;
       text-indent: -9999px;
       width: 4em;
       height: 2em;
@@ -181,5 +183,11 @@ button:focus {
     transform: translate(50%, 0); }
   100% {
     transform: translate(-100%, 0); } }
+@media screen and (min-width: 426px) {
+  body {
+    font-size: 20px; } }
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 24px; } }
 
 /*# sourceMappingURL=style.css.map */

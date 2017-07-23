@@ -137,7 +137,7 @@ $(document).ready(function(){
 
 
          if (wrong==0) {
-            display.text( (playList.length-1<10) ? ('0' + (playList.length+1).toString()) : (playList.length+1) );
+            display.text( (playList.length+1<10) ? ('0' + (playList.length+1).toString()) : (playList.length+1) );
             // console.log(display.text());
          }
          else if (wrong==1) {

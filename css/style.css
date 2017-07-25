@@ -167,6 +167,17 @@ button:focus {
     color: black; }
   100% {
     color: black; } }
+@keyframes blink2 {
+  0% {
+    color: transparent; }
+  25% {
+    color: black; }
+  50% {
+    color: transparent; }
+  75% {
+    color: black; }
+  100% {
+    color: black; } }
 @keyframes blinkInfi {
   0% {
     color: transparent; }

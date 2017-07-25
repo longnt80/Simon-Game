@@ -118,7 +118,6 @@ $(document).ready(function(){
          index = index || 0;
          var toneDuration = 200;
          var temple = (index==0) ? (1500) : (200);
-         // (index==0) ? (temple = 3200) : (temple = 500);
          mouseClickable = 0;
          function playRandomNote() {
             let random = randomRange(3,0);
@@ -145,7 +144,9 @@ $(document).ready(function(){
             // console.log(display.text());
          }
          timeoutID = setTimeout(function() {
-            if (index == 0) { display.addClass('blink');}
+            if (index == 0) {
+                  display.addClass('blink');
+            }
             timeoutID = setTimeout(function() {
                display.removeClass('blink');
 
@@ -180,7 +181,7 @@ $(document).ready(function(){
                // logging();
                
             },temple)
-         },100)
+         },10);
 
 
          
@@ -333,7 +334,6 @@ $(document).ready(function(){
                },1000);
             }
             // logging();
-            
          }
          
       });

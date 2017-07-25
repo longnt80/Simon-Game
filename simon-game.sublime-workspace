@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"bli",
+				"blink"
+			],
+			[
 				"blink",
 				"blinkInfi"
 			],
@@ -42,10 +46,6 @@
 			[
 				"tra",
 				"translate"
-			],
-			[
-				"bli",
-				"blinkInfi"
 			],
 			[
 				"di",
@@ -199,23 +199,23 @@
 			"file": "js/index.js",
 			"settings":
 			{
-				"buffer_size": 12485,
-				"line_ending": "Unix"
+				"buffer_size": 12477,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 4974,
-				"line_ending": "Unix"
+				"buffer_size": 5178,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1327,
+				"buffer_size": 1318,
 				"line_ending": "Unix"
 			}
 		}
@@ -427,15 +427,15 @@
 					"file": "js/index.js",
 					"settings":
 					{
-						"buffer_size": 12485,
+						"buffer_size": 12477,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								423,
-								423
+								5173,
+								5173
 							]
 						],
 						"settings":
@@ -445,7 +445,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5578.0,
+						"translation.y": 2572.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -455,15 +455,15 @@
 					"file": "scss/style.scss",
 					"settings":
 					{
-						"buffer_size": 4974,
+						"buffer_size": 5178,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2463,
-								2463
+								4783,
+								4783
 							]
 						],
 						"settings":
@@ -473,7 +473,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2186.0,
+						"translation.y": 1904.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -483,15 +483,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 1327,
+						"buffer_size": 1318,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								329,
-								329
+								214,
+								214
 							]
 						],
 						"settings":

@@ -316,19 +316,22 @@ $(document).ready(function(){
             }
             else {
                clearTimeout(timeoutID);
-               display.removeClass('marquee blinkInfi').text('--').addClass('blink');
                mouseClickable = 0;
                playList = [];
                wrong = 0;
                theBtn.removeClass('active');
                if (btnSound.gain) {btnSound.stop();}
                if (errSound.gain) {errSound.stop();}
+               display.removeClass('marquee blinkInfi').text('--').addClass('blink');
+               // display.removeClass('marquee blinkInfi').text('--').addClass('blink').delay(1000).promise().done(function(){
+               //    display.removeClass("blink").delay(100).promise().done(playTones);
+               // });
                timeoutID = setTimeout(function() {
                   display.removeClass('blink');
                   timeoutID = setTimeout(function() {
                      playTones();
                   },500);
-               },500);
+               },500); // 500 + 500 equals to the amount for the blink effect to ends
             }
             // logging();
          }

@@ -143,42 +143,44 @@ $(document).ready(function(){
             display.text( (playList.length<10) ? ('0' + (playList.length).toString()) : (playList.length) );
             // console.log(display.text());
          }
-         
-         if (index == 0) { display.addClass('blink'); }
-         timeoutID = setTimeout(function() {
-            display.removeClass('blink');
+         timeoutID = setTimeout(function(){
+            if (index == 0) { display.addClass('blink'); }
+            
+            timeoutID = setTimeout(function() {
+               display.removeClass('blink');
 
-            if (playList.length == 0) {
-               playRandomNote();
-            }
-            else if (index == playList.length) {
-               if ( wrong==0 ) {
+               if (playList.length == 0) {
                   playRandomNote();
                }
-               else if ( wrong==1 ) {
-                  playListCopy = playList.slice();
-                  setTimeLimit();
+               else if (index == playList.length) {
+                  if ( wrong==0 ) {
+                     playRandomNote();
+                  }
+                  else if ( wrong==1 ) {
+                     playListCopy = playList.slice();
+                     setTimeLimit();
+                  }
                }
-            }
-            else if (playList.length != 0 && index < playList.length) {
-               var btn = $(theBtn[playList[index]]);
-               btnSound.freq = freqArr[playList[index]];
-               
-               btn.addClass('active');
-               btnSound.play();
-               console.log('Play the list: ');
+               else if (playList.length != 0 && index < playList.length) {
+                  var btn = $(theBtn[playList[index]]);
+                  btnSound.freq = freqArr[playList[index]];
+                  
+                  btn.addClass('active');
+                  btnSound.play();
+                  console.log('Play the list: ');
 
-               timeoutID = setTimeout(function(){
-                  btn.removeClass('active');
-                  btnSound.stop();
-                  playTones(index + 1);                  
-               },toneDuration);
-            }
-            
-            // console.log(playList);
-            // logging();
-            
-         },temple)
+                  timeoutID = setTimeout(function(){
+                     btn.removeClass('active');
+                     btnSound.stop();
+                     playTones(index + 1);                  
+                  },toneDuration);
+               }
+               
+               // console.log(playList);
+               // logging();
+               
+            },temple);
+         },100);
                   
       }
       
@@ -328,10 +330,8 @@ $(document).ready(function(){
                // });
                timeoutID = setTimeout(function() {
                   display.removeClass('blink');
-                  timeoutID = setTimeout(function() {
-                     playTones();
-                  },500);
-               },500); // 500 + 500 equals to the amount for the blink effect to ends
+                  playTones();
+               },1000);
             }
             // logging();
          }

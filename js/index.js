@@ -144,8 +144,7 @@ $(document).ready(function(){
             // console.log(display.text());
          }
          timeoutID = setTimeout(function(){
-            if (index == 0) { display.addClass('blink'); }
-            
+            if (index == 0) { display.addClass('blink'); }            
             timeoutID = setTimeout(function() {
                display.removeClass('blink');
 
